@@ -68,7 +68,7 @@ const News = () => {
           value={userQuery}
           onKeyPress={(e) => {
             if (e.key === "Enter") {
-              setUserQuery("");
+              setUserQuery(null);
             }
           }}
           onChange={(e) => setUserQuery(e.target.value)}
